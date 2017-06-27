@@ -1,0 +1,244 @@
+/* Общие стили */
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+	
+/* Общие стили */
+	* {margin: 0;padding: 0;}
+	html,body,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0;padding: 0;font-weight:normal;}
+	body, html {background: #eff3f6;height:100%; color: #000;font-size: 12px;}
+	
+	body {background: #eff2f6; min-height:100%; position:relative;}
+	table {border:0;padding:0; border-collapse:collapse;border-spacing: 0px;width:100%;font-size: 11px;}
+	td {vertical-align:middle;padding:0;}
+	a img  {border: 0;}
+	select,input,textarea {font-size: 11px; outline: none;}
+	select option {background: #fff; color: #555;}
+    
+	a {text-decoration:none;}
+	a:hover {color: #0080ff;text-decoration:underline;}
+	ul,li {list-style: none;padding: 0;margin: 0;}
+	button {border: 0;outline: none;}
+
+	p {margin:0;padding:0;}
+	button {cursor:pointer;}
+	.clr {clear:both;}
+	.hide {display:none;}
+	.brr {-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius: 5px;border-radius: 5px;} 
+	.brr30 {-webkit-border-radius: 30px;-moz-border-radius: 30px;-o-border-radius: 30px;border-radius: 30px;} 
+	.brr50 {-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;border-radius: 50%;}
+	
+	
+	.right {float: right;}
+	.left {float: left;}
+
+/* Каркас */
+	.navigation {font-family: 'Open Sans', sans-serif;}  
+	.wrapper {min-width: 900px; max-width:1110px;margin: 0 auto;}
+	.divider {background: #e2dee0; display: inline-block; height: 2px; width: 53px;}
+	.menu {position: relative; max-width: 900px;}
+	.menu li {display: block; float: left;  padding: 0 20px;}
+	.menu li a {display: block; color: #96a6a7; font-size: 14px; line-height: 24px;text-decoration: none; font-family: "GothamProMedium"; text-transform: uppercase;}
+	
+	.content {padding-bottom: 70px;}
+	.green {background: #1baf5d;}
+	.yellow_c {color: #f19e1f;}
+	.green_c {color: #1baf5d;}
+	.yellow {background: #f19e1f;}
+	.purple {background: #88499c;}
+	.purple_c {color: #88499c;}
+	.blue_c {color: #6cb7e1;}
+
+	.side_menu {background: #4c5e70; position: fixed; z-index: 3; left: 0; margin-top: 74px; height: 100%; width: 15%;}
+	.side_menu.click {margin-top: 0; top: 330px;}
+	.side_menu ul li {line-height: 18px;}
+	.side_menu ul li a {position: relative; padding: 22px 0 22px 53px; text-decoration: none; display: block; height: 100%; color: #b4bac0; font-family: 'Open Sans', sans-serif; font-weight: 400;}
+	.side_menu ul li a img {position: absolute; left: 21px;}
+	.side_menu ul li.documents {background: #3fb7d7;}
+	.side_menu ul li.documents:hover {background: #3fb7d7;}
+	.side_menu ul li.documents a {color: #ffffff;}
+	.side_menu ul li.active {background: #3d4f60;}
+	.side_menu ul li.active a {color: #ffffff;}
+	.side_menu ul li:hover {background: #3d4f60; cursor: pointer;}
+	.side_menu ul li:hover a {color: #ffffff;}
+	
+	.footer {background: #3d4f60; color:#b3c2d0; z-index: 2; width: 100%; padding: 26px 0; position: fixed; left: 0; bottom: 0; font-family: 'Open Sans', sans-serif; font-weight: 300;}
+	.footer li {float: left; padding-right: 80px;}
+	.footer li a {color:#b3c2d0;} 
+	.footer td.navigation {padding-left: 80px;} 
+	.footer td.copy {text-align: right; padding-right: 80px;}
+	
+	.nav {background: #d5dde4; position: fixed; left: 0; top: 0; z-index: 100; width: 100%;}
+	.nav .logo {background: #354656; width: 15%;}
+	.nav .logo a{color: #ffffff;  padding: 0;}
+	.nav .logo img{padding: 26px 0 26px 30px;}
+	.nav td .main-search {padding-left: 80px; position: relative;}
+	.nav td .main-search button {position: absolute; top: -5px;}
+	.nav td .main-search .form-control {border: none;  color: #7b8da0; background: #d5dde4; padding-left: 38px;}
+	.nav td.login {text-align: right; width: 141px;}
+	.nav td.login a { line-height: 25px; padding: 0 20px;  border-left: 2px solid #b9c6d3;  color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 300; }
+	.nav td.login a img {padding: 0 19px 0 12px;}
+	.nav td.logo_user {padding-right: 80px;  text-align: right; height: 40px; width: 40px; }
+	.nav td.logo_user .bl_logo_user {border-radius: 50%;}
+	.nav td.ring {text-align: right; position: relative;}
+	.nav td.ring img {padding-right: 30px;}
+	.nav td.ring span {    position: absolute;   padding: 4px 7px; border-radius: 10px; background: #ff4c78;  top: 15px; right: 20px; font-size: 8px; font-family: 'Open Sans', sans-serif;color: #ffffff;}
+	
+	.info {background: #ffffff; display:none;top: 74px; width: 15%;position: fixed; left: 0;}
+	.info .user_company {padding: 16px 0 20px 36px; border-bottom: 1px solid #f1f2f3;}
+	.info .user_company li {padding-bottom: 13px;}
+	.info .user_company li:last-of-type {padding-bottom: 0;}
+	.info .user_company li a {color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px;}
+	.info .user_company li a img {vertical-align: middle; padding-right: 18px;}
+	.info .companies {padding: 33px 0 33px 36px;}
+	.info .companies li {padding-bottom: 23px;}
+	.info .companies li:last-of-type {padding-bottom: 0;}
+	.info .companies li a {color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px;}
+	
+	.settings {background: #f6f8fa; display: none; position: fixed; z-index: 1; top: 74px; height: 100%; width: 19%;}
+	.settings .title a {color: #aeb5bd; float: left; border: 0;}
+	.settings .title img {float: right; padding: 24px 27px; cursor: pointer;}
+	.settings ul li {line-height: 18px;}
+	.settings ul li a {padding: 22px 0 22px 0; text-decoration: none; display: block; height: 100%; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; border-bottom: 1px solid #dfe6ec;  margin: 0 35px 0 25px;}
+	.settings ul li a.end {border: none;}
+	.settings ul li.active {background: #dfe6ec;}
+	
+	.products {background: #f6f8fa; display: none;  position: fixed; top: 74px; z-index: 1; height: 100%; width: 19%;}
+	.products .title a {color: #aeb5bd; float: left; border: 0;}
+	.products .title img {float: right; padding: 24px 27px; cursor: pointer;}
+	.products ul li {line-height: 18px;}
+	.products ul li a {padding: 22px 0 22px 0; text-decoration: none; display: block; height: 100%; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; border-bottom: 1px solid #dfe6ec;  margin: 0 35px 0 25px;}
+	.products ul li a.end {border: none;}
+	.products ul li.active {background: #dfe6ec;}
+	
+	.indent {width: 15px;}
+	.main_billing {background: #eff3f6; position: absolute; left: 33%; top: 74px; padding: 53px 80px 130px 44px; max-width: 910px; margin-bottom: 67px;}
+	.main_billing .title {padding-bottom: 50px; border-bottom: 1px solid #dae1e8; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 13px; line-height: 13px;}
+	.main_billing .text {padding: 40px 0 30px 0; font-family: 'Open Sans', sans-serif; font-weight: 300; }
+	.main_billing .table_billing {width: 100%; max-width: 910px;}
+	.main_billing table td.suggest {background: #ffffff; padding: 16px 16px 60px 16px; width: 70%; max-width: 650px;}
+	.main_billing table td.suggest .block_price {border: 3px solid #f5f5f5; cursor: pointer;  margin-right: 16px; text-align: center; padding: 23px 17px 17px 17px; height: 275px; position: relative;}
+	.main_billing table td.suggest .block_price.active {border-color: #3fb7d7;}
+	.main_billing table td.suggest .block_price .title {padding-bottom: 16px; border: 0;}
+	.main_billing table td.suggest .block_price .text {color: #4c5e70; padding: 0;}
+	.main_billing table td.suggest .block_price td.price {padding: 38px 0; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px; line-height: 12px;}
+	.main_billing table td.suggest .block_price td.price span {font-size: 18px; line-height: 18px; font-weight: bold;}
+	.main_billing table td.suggest .block_price td.price .txt_small {font-size: 10px; padding-left: 70px;}
+	.main_billing table td.suggest .block_price td.links {text-align: left; height: 172px; vertical-align: bottom;}
+	.main_billing table td.suggest .block_price td.links li {padding-bottom: 15px; }
+	.main_billing table td.suggest .block_price td.links li a {font-size: 10px; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; }
+	.main_billing table td.suggest .math {padding-left: 34px; padding-bottom: 50px;}
+	.main_billing table td.suggest .math .title {padding: 45px 0 15px 0; border: 0;}
+	.main_billing table td.suggest .math form {color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px;}
+	.main_billing table td.suggest .math form .num {color: #7c8793; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px; border: 1px solid #e9ebeb; line-height: 12px; padding: 8px 0; text-align: center;}
+	.main_billing table td.suggest .math form .res {border: 0; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px;}
+	.main_billing table td.suggest .math form span {border: 1px solid #e9ebeb; cursor: pointer; line-height: 12px; font-size: 12px; font-weight: bold; padding: 8px 13px;}
+	.main_billing table td.suggest .math form span.minus {margin-right: 8px; color: #4c5e70;}
+	.main_billing table td.suggest .math form span.plus {margin: 0 16px 0 8px; color: #649fdb;}
+	
+	.main_billing .block_time {cursor: pointer; padding:15px 15px 0 15px; height: 166px; max-width: 120px; margin-right: 20px; position: relative;}
+	.main_billing .block_time.active {border: 2px solid #3fb7d7;}
+	.main_billing .block_time table td {padding-bottom: 15px; text-align: center;}
+	.main_billing .block_time table td.text {color: #4c5e70; padding: 0; padding-bottom: 15px; font-size: 12px;}
+	.main_billing .block_time table td.link {position: absolute; bottom: 0; left: 33%;}
+	.main_billing .block_time table td.text.blue_c {color: #6cb7e1;}
+	.main_billing .block_time table td .circle {display: inline-block; position: relative; height: 36px; width: 36px; border: 2px solid #43b8d8; border-radius: 50%;}
+	
+	.main_billing .block_time table td .circle img {padding-top: 12px;}
+	
+	.main_billing table td.total_price	{background: #e8ecee; position: relative; vertical-align: top;}
+	.main_billing table td.total_price .top_bl {padding: 45px 25px 0 30px;}
+	.main_billing table td.total_price .top_bl .title {padding: 0; padding-bottom: 25px;  border: 0;}
+	.main_billing table td.total_price .top_bl .year {float: left;color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 13px; line-height: 13px;}
+	.main_billing table td.total_price .top_bl .date {float: right;color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 13px; line-height: 13px;}
+	.main_billing table td.total_price .total {position: absolute; bottom: 55px; left: 50px;}
+	.main_billing table td.total_price .total .txt {padding-bottom: 20px; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 13px; line-height: 13px;}
+	.main_billing table td.total_price .total .price {color: #3fb7d7; padding-bottom: 20px; font-family: 'Open Sans', sans-serif;  font-size: 28px; line-height: 28px; font-weight: bold;}
+	.main_billing table td.total_price .total button {padding: 12px 25px; background: #3fb7d7; border-radius: 5px;color: #ffffff;}
+	
+	.main_documents {background: #eff3f6; position: absolute; left: 33%; top: 74px; padding: 53px 80px 130px 44px;max-width: 1153px;  margin-bottom: 67px; width: 85%;}
+	.main_documents .top {padding-bottom: 25px; margin-bottom: 40px; border-bottom: 1px solid #dae1e8; border-collapse: separate;}
+	.main_documents .top .title {width: 35%;}
+	.main_documents .top .title span {color: #7b8da0; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; line-height: 13px;}
+	.main_documents .top .title .hello {color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 16px; line-height: 16px; padding-bottom: 10px;}	
+	.main_documents form .form {margin-bottom: 50px; width: 70%;}
+	.main_documents form .form .indent {width: 30px;}
+	.main_documents form .form .title {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_documents form .form .txt {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_documents form .form .input .form-control {border-radius: 5px; border: 0; box-shadow: 0 2px 4px rgba(0, 0, 0, .2); padding: 15px 0 15px 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px; width: 100%; box-sizing: border-box;}
+	.main_documents form .form .input {position: relative;}	
+	.main_documents form .form .input img {position: absolute; right: 30px; top: 15px;}	
+	.main_documents form .form td {width: 48%;}
+	.main_documents form .title {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_documents form .photo {margin-left: 30px;  height: 106px; width: 119px; margin-right: 25px; float: left;}
+	.main_documents form .file {background: #ffffff; padding: 14px 33px; border-radius: 5px; border: 1px solid #dae1e8; color: #4c5e70; margin-bottom: 25px; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}	 
+	.main_documents form .inform {float: left; width: 365px;}
+	.main_documents form .inform span {color: #bec5cb; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 18px;}
+	.main_documents .main {background: #ffffff; text-align: center; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; }
+	.main_documents .main tr {}
+	.main_documents .main tr td { padding: 20px 20px;}
+	.main_documents .main  tr td .form-control  {height: 40px; border: 1px solid #d5dde4; border-radius: 5px; text-align: center;     width: 125px;}
+	.main_documents .main  tr td .btn_cancel {background: url(../img/icon/icon_cancel.png) center no-repeat; width: 12px; height: 13px;}
+	.main_documents .main  tr td .btns .search {color: #b4b9c0; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; height: 40px; border: 1px solid #d5dde4; float: left; border-radius: 5px; padding-left: 20px; margin-right: 25px;  text-align: left;  width: 55%;}
+	.main_documents .main  tr td .btns .doc {height: 40px; width: 164px; background: #3fb7d7; border-radius: 5px; color: #ffffff; margin-right: 15px; float: right;}
+	.main_documents .main  tr td .btns .pdf {height: 40px; width: 164px; background: #4c5e70; border-radius: 5px; color: #ffffff; float: right;}
+	.main_documents form .save {margin-top: 20px;padding: 14px 45px; background: #3fb7d7; color: #ffffff; border-radius: 5px;font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}	 
+	.main_documents form .left_form {float: left; margin-top: 35px; width: 68%;}
+	.main_documents form .left_form textarea {border: 0px;border-radius: 5px; color: #b4b9c0; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; margin: 0px;width: 100%; padding: 20px 30px;}
+	.main_documents form .right_form {float: right; margin-top: 90px; width: 20%;}
+	.main_documents form .right_form .title {padding-left: 0;}
+	.main_documents form .right_form .total {vertical-align: top; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}
+	
+	.main_project {background: #eff3f6; position: absolute; left: 15%; top: 74px; padding: 53px 80px 130px 80px; max-width: 1125px;  margin-bottom: 67px; width: 85%;}
+	.main_project .top {padding-bottom: 25px; margin-bottom: 40px; border-bottom: 1px solid #dae1e8; border-collapse: separate;}
+	.main_project .top .title {width: 35%;}
+	.main_project .top .title span {color: #7b8da0; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; line-height: 13px;}
+	.main_project .top .title .hello {color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 16px; line-height: 16px; padding-bottom: 10px;}
+	.main_project .top .btns {text-align: right;}
+	.main_project .top .btns .doc {height: 40px; width: 164px; background: #3fb7d7; border-radius: 5px; color: #ffffff; margin-right: 15px; }
+	.main_project .top .btns .pdf {height: 40px; width: 164px; background: #4c5e70; border-radius: 5px; color: #ffffff;}
+	.main_project .main {background: #ffffff; text-align: center; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px; }
+	.main_project .main tr {border-bottom: 1px solid #eaecee;}
+	.main_project .main tr td { padding: 20px 0;}
+	.main_project .main .user_info {position: relative;}
+	.main_project .main .user_info span {padding-left: 10px; position: absolute; top: 13px; width: 100%;}
+	
+	.main_company_edit {background: #eff3f6; position: absolute; left: 15%; top: 74px; padding: 53px 80px 130px 80px; max-width: 1125px; margin-bottom: 67px; width: 85%;}
+	.main_company_edit .top {padding-bottom: 25px; margin-bottom: 40px; border-bottom: 1px solid #dae1e8; border-collapse: separate;}
+	.main_company_edit .top .title {width: 35%;}
+	.main_company_edit .top .title span {color: #7b8da0; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 13px; line-height: 13px;}
+	.main_company_edit .top .title .hello {color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 16px; line-height: 16px; padding-bottom: 10px;}	
+	.main_company_edit form .form {margin-bottom: 50px; width: 80%;}
+	.main_company_edit form .form .indent {width: 30px;}
+	.main_company_edit form .form .title {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_company_edit form .form .input .form-control {border-radius: 5px; border: 0; box-shadow: 0 2px 4px rgba(0, 0, 0, .2); padding: 15px 0 15px 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px; width: 100%; box-sizing: border-box;}	
+	.main_company_edit form .form td {width: 28%;}
+	.main_company_edit form .title {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_company_edit form .photo {margin-left: 30px;  height: 106px; width: 119px; margin-right: 25px; float: left;}
+	.main_company_edit form .file {background: #ffffff; padding: 14px 33px; border-radius: 5px; border: 1px solid #dae1e8; color: #4c5e70; margin-bottom: 25px; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}	 
+	.main_company_edit form .inform {float: left; width: 365px;}
+	.main_company_edit form .inform span {color: #bec5cb; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 18px;}
+	.main_company_edit form .save {float: right; margin-top: 45px;padding: 14px 45px; background: #3fb7d7; color: #ffffff; border-radius: 5px;font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}	 
+	
+	.main_settings {background: #eff3f6; position: absolute; left: 33%; top: 74px; padding: 53px 80px 130px 44px; max-width: 1153px;  margin-bottom: 67px; width: 85%;}
+	.main_settings .title {padding-bottom: 50px; border-bottom: 1px solid #dae1e8; color: #4c5e70; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 13px; line-height: 13px; margin-bottom: 40px;}
+	.main_settings form .title_bl {padding-left: 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: bold; font-size: 13px; line-height: 16px; padding-bottom: 20px;}	
+	.main_settings form  li.tooltip .form-control {border-radius: 5px; border: 0; box-shadow: 0 2px 4px rgba(0, 0, 0, .2); padding: 15px 0 15px 30px; color: #4c5e70; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px; width: 265px; box-sizing: border-box;}	
+	.main_settings form  li.tooltip { margin-bottom: 30px; position: relative;}
+	.main_settings form .save {padding: 14px 45px; background: #3fb7d7; color: #ffffff; border-radius: 5px;font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 16px;}	 
+	.main_settings form  li.tooltip .custom {background: #ffffff; border-radius: 5px; color: #bec3c8; position: absolute; padding: 25px 30px 25px 25px; width: 53%; z-index: 1; left: 290px; top: 18px; font-family: 'Open Sans', sans-serif;  font-weight: 400; font-size: 13px; line-height: 30px;}
+	.main_settings form  li.tooltip .custom:after {content: "";position: absolute; z-index: 1000;left: -7px; top: 15%;  border-top: 16px solid transparent; border-left: 0; border-right: 11px solid #fff; border-bottom: 16px solid transparent;}
+	
+
+	@media screen and (max-width: 1450px) {
+		.main_billing table td.suggest .block_price {width: 118px;}
+		.main_company_edit {max-width: 910px;}
+		.main_project {max-width: 910px;}
+		.main_settings {max-width: 910px;}
+		.main_documents {max-width: 910px;}
+	}
+	
+	@media screen and (max-width: 1245px) {
+		.main_company_edit {max-width: 864px;}
+		.main_project {max-width: 864px;}
+		.main_settings {max-width: 864px;}
+		.main_documents {max-width: 864px;}
+	}
